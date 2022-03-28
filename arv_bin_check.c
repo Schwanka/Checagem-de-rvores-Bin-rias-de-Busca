@@ -22,11 +22,11 @@ int arv_bin_check(Arvore * a){
     return 0;
     }
 }
-boolen arv_bin_bus(Arvore * a){
+bool arv_bin_bus(Arvore * a){
     /*
     Essa função verifica se todos os nós da arvore estão em ordem, ou seja, se essa arvore é binária de busca
     */
-    boolean manteve = true; // defino o valor para verificação padrão. Se alterado, ela não é binária de busca.
+    bool manteve = true; // defino o valor para verificação padrão. Se alterado, ela não é binária de busca.
     if((a->esq != NULL) & (a->dir !=NULL)){ // verifico se é folha
         if(a->esq !=NULL){ // se tem filho, verifica se tem a esquerda
             if(a->esq->info < a->info){ // se tem a esq e for menor
